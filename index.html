@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/leiaute.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="/scripts/script.js" defer></script>
+
+    <title>Reprograme-se</title>
+</head>
+
+
+<body>
+    <div vw class="enabled bg-primary bg-opacity-75 border border-2 rounded-3 me-1">
+        <button id="increase-font-size" class="btn bg-transparent btn-lg mb-1"> <img src="/img/icon-acess3.png" alt="" width="20px" height="20px"></button><br>
+        <button id="decrease-font-size" class="btn bg-transparent btn-lg mb-1"><img src="/img/icon-acess4.png" alt="" width="20px" height="20px"></button><br>
+        <button class="btn bg-transparent mb-1" id="high-contrast-mode" aria-expanded="false">
+            <img src="/img/icon-acess2.png" id="high-contrast-mode" alt="" width="30px" height="30px">
+        </button><br>
+        <div class="p-1 ms-1">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+
+    <main class="ta-center">
+
+        <section class="container-fluid" id="inicio">
+            <h2 class="mb-10 mt-10 text-black-50">PROJETO REPROGRAME-SE</h2>
+            <h1 class="mb-10 gradient">CAPACITAÇÃO EM PROGRAMAÇÃO E DESENVOLVIMENTO DE WEBSITES</h1>
+        </section>
+        <div class="bg-dark p-5 bg-reprogramese" id="inscricao">
+            <div class="col-lg-6 col-sm-12 mx-auto">
+                <span id="proximaturma" value="2023-09-15T10:00:00"></span>
+                <p class="h3 text-light" data-aos="fade-up">CHEGOU A HORA DE REPROGRAMAR O SEU FUTURO!</p>
+                <div class="relogio d-flex align-items-center row col-sm-12 p-0 my-4" data-aos="fade-right">
+                    <p class="row d-grid mb-0 mt-1 titulo-relogio text-uppercase mx-auto">Tempo restante para abertura de
+                        nova turma: </p>
+                    <div class="col d-grid align-items-center p-3">
+                        <span id="dias">0</span>
+                        <span class="tempo">Dias</span>
+                    </div>
+
+                    <div class="col d-grid align-items-center p-3">
+                        <span id="horas">00</span>
+                        <span class="tempo">Horas</span>
+                    </div>
+
+                    <div class="col d-grid align-items-center p-3">
+                        <span id="minutos">00</span>
+                        <span class="tempo">Minutos</span>
+                    </div>
+
+                    <div class="col d-grid align-items-center p-3">
+                        <span id="segundos">00</span>
+                        <span class="tempo">Segundos</span>
+                    </div>
+                </div>
+                <p class="mb-20 text-light" data-aos="fade-left">APRENDA A PROGRAMAR DE FORMA TOTALMENTE GRATUITA EM UM
+                    AMBIENTE EAD INTERATIVO.
+                </p>
+                <a href="https://cachoeiro.ifes.edu.br/processosseletivos/alunos/16788-edital-25-2022-processo-de-selecao-de-estudantes-para-o-curso-do-projeto-reprograme-se" class="btn btn-primary btn-lg p-4 rounded-2" data-aos="fade-right" target="_blank">INSCREVA-SE
+                    AGORA!</a>
+            </div>
+        </div>
+    </main>
+
+
+    <hr class="container text-primary border-5">
+
+    <div class="container" id="noticias">
+        <h2 class="text-center titulo-azul">NOTÍCIAS</h2>
+        <section class="mt-2 container" data-aos="fade-up">
+            <div id="carouselExampleIndicators" class="carousel slide d-flex" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner p-1">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="/img/BANNER-rep.png" class="d-block w-100" alt="Imagem do Carrossel 1">
+                        <div class="carousel-caption p-3 col-6 mx-auto">
+                            <a href="#" class="btn btn-info mb-2">INSCREVA-SE!</a>
+                            <h5 class="text-info">Oportunidades de Estágio!</h5>
+                            <p class="lead d-none d-md-block">Empresas parceiras estão contratando!</p>
+                            <p class="lead bg-dark bg-opacity-50 d-none d-md-block">03/03/2023 17:40h</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/img/noticia2.jpg" class="d-block w-100" alt="Imagem do Carrossel 2">
+                        <div class="carousel-caption p-3 col-8 mx-auto">
+                            <h5 class="text-bg-danger">Cuidado com a FAKENEWS!!</h5>
+                            <p class="lead d-none d-md-block">Nova ferramenta do OpenIA é capaz de idêntificar notícias falsa. Acesse o link para
+                                saber mais!</p>
+                            <p class="lead bg-dark bg-opacity-50 d-none d-md-block">03/03/2023 17:40h</p>
+                            <a href="#" class="btn btn-primary">Ler mais</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/img/noticia4.jpg" class="d-block w-100" alt="Imagem do Carrossel 3">
+                        <div class="carousel-caption p-3 col-8 mx-auto">
+                            <h5 class="text-info">Hackathon Reprograme-se!</h5>
+                            <p class="lead d-none d-md-block">Alunos do curso enfrentam para desenvolver projetos no Hackathon 2023.</p>
+                            <p class="lead bg-dark bg-opacity-50 d-none d-md-block">03/03/2023 17:40h</p>
+                            <a href="#" class="btn btn-outline-info">Acompanhe as novidades do Reprograme-se</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <hr class="container text-primary border-5 my-5">
+    <section id="instituicoes" class="container mt-30">
+        <div class="row">
+            <div class="col-12" data-aos="fade-up">
+                <h1 class="titulo-azul text-center">Realização</h1>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-end" data-aos="fade-right">
+                <img class="w-50 opacity-75" src="/img/logo-action/horizontal-cor.png" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-start" data-aos="fade-left">
+                <img class="w-75 opacity-75" src="/img/logo-ifes/ifes-horizontal-cor.png" alt="">
+            </div>
+            <div class="col-12" data-aos="fade-up">
+                <p class="text-black text-center fs-4 pt-4">O Reprograme-se é um projeto realizado pela Action e pelo
+                    IFES com parceria de diversas empresas privadas. O programa tem a expectativa de absorver grande
+                    parte dos alunos capixabas no mercado de tecnologia. </p>
+            </div>
+            <div class="col-12" data-aos="fade-right">
+                <h2 class="text-black pt-4">Como Funciona?</h2>
+            </div>
+            <div class="col-12" data-aos="fade-right">
+                <p class="text-black fs-4 pt-4"><i class="bi-arrow-right-square-fill text-danger"></i> SÃO 16 POLOS
+                    ESPALHADOS PELO ESTADO</p>
+                <p class="text-black fs-4 pt-2 ms-5"><i class="bi-circle-fill text-warning"></i> Polo é um espaço de
+                    apoio para os seus estudos. Basta se dirigir a um mais próximo de você.</p>
+            </div>
+            <div class="col-12" data-aos="fade-right">
+                <p class="text-black fs-4 pt-2 ms-5"><i class="bi-circle-fill text-warning"></i> Com itinerário
+                    formativo ágil, flexível, orientado por projetos práticos reais e integrado com o mundo do trabalho,
+                    o participante tem a possibilidade de ingressar em estágios nas empresas de tecnologia do Estado.
+                </p>
+            </div>
+            <div class="col-12" data-aos="fade-right">
+                <p class="text-black fs-4 pt-2 ms-5"><i class="bi-circle-fill text-warning"></i> Uma metodologia
+                    preparada especialmente para a capacitação em um curto espaço de tempo, por profissionais
+                    experientes na modalidade EAD.</p>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-2" data-aos="fade-left">
+                <h2 class="pb-3">Conheça a grade curricular do programa</h2>
+            </div>
+            <div class="col-12 d-flex justify-content-center" data-aos="fade-left">
+                <img class="w-75 opacity-75" src="/img/grade_curricular.png" alt="">
+            </div>
+            <div class="col-12 d-flex justify-content-center pt-3 pb-4" data-aos="fade-right">
+                <button class="btn-solido"><a class="text-decoration-none text-light fs-4" href="https://cachoeiro.ifes.edu.br/processosseletivos/alunos/16788-edital-25-2022-processo-de-selecao-de-estudantes-para-o-curso-do-projeto-reprograme-se" target="_blank">Inscreva-se agora</a></button>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+
+    <hr class="container text-primary border-5" id="depoimentos">
+    <h4 class="titulo-azul text-center" data-aos="fade-right">Depoimentos de Ex-alunos</h4>
+    <div class="container mt-3">
+        <div class="container mb-5" data-aos="fade-up">
+            <div class="row">
+                <div class="col card-depoimentos border-bottom border-3">
+                    <div class="card mt-1">
+                        <img src="/img/minhafoto3.jpg" class="p-2 d-flex mx-auto" alt="Imagem da Notícia 1">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Antônio Carlos Silva</h5>
+                            <p class="card-subtitle text-muted">Data: 25/12/2023</p>
+                            <p class="text-dark">"O "Reprograme-se" me ajudou a dar o salto que eu precisava em minha carreira. Eu já trabalhava como programador há alguns anos, mas sentia que estava ficando para trás em relação às novas tecnologias e tendências do mercado. Participar do curso me deu uma visão mais ampla do setor e me ajudou a adquirir novas habilidades que me permitiram crescer profissionalmente. Sou grato pela oportunidade de ter participado do "Reprograme-se" e recomendo a todos que desejam aprimorar suas habilidades em programação."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col card-depoimentos border-bottom border-3">
+                    <div class="card mt-1">
+                        <img src="/img/minhafoto4.jpg" class="p-2 d-flex mx-auto" alt="Imagem da Notícia 1">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Ana Beatriz</h5>
+                            <p class="card-subtitle text-muted">Data: 10/12/2023</p>
+                            <p class="text-dark">"Participar do bootcamp "Reprograme-se" foi uma das melhores decisões que já tomei na minha carreira. As aulas são muito bem estruturadas e o material de apoio é excelente. Os mentores são muito experientes e estão sempre prontos para ajudar. Além disso, o networking com outros alunos e profissionais do setor é incrível. Graças ao "Reprograme-se", consegui uma posição em uma grande empresa de tecnologia e estou muito satisfeito com meu trabalho atual."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col card-depoimentos border-bottom border-3">
+                    <div class="card mt-1">
+                        <img src="/img/minhafoto2.jpg" class="p-2 d-flex mx-auto" alt="Imagem da Notícia 1">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Alexandre Pereira</h5>
+                            <p class="card-subtitle text-muted">Data: 10/02/2025</p>
+                            <p class="text-dark">"O bootcamp "Reprograme-se" foi uma experiência transformadora para mim. Antes de participar do curso, eu tinha pouca experiência em programação e não sabia por onde começar minha carreira na área. Mas com a ajuda dos mentores e dos outros alunos, eu aprendi muito e me senti muito mais confiante em minhas habilidades. Hoje em dia, estou trabalhando como desenvolvedora em uma startup promissora e devo muito do meu sucesso ao "Reprograme-se"."
+                            </p>
+                            <!-- <a href="#" class="btn btn-primary">Ler mais</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <p class="text-bg-primary container-fluid text-center py-5 mb-5 h6" data-aos="fade-up">COM A SUA EXPERIÊNCIA, A SUA REMUNERAÇÃO PODE CHEGAR A R$5.000,00.</p>
+
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-6 col-12 mb-3" data-aos="fade-down" id="eventos">
+                <h4 class="text-center titulo-azul p-1 mb-1">#PRÓXIMOSEVENTOS</h4>
+                <div class="card bg-agenda">
+                    <div class="card-body agenda" data-aos="fade-right">
+                        <div class="col-8 d-flex mx-auto">
+                            <div class="teste mb-3">
+                                <img class="img-fluid img-thumbnail" src="img/gif-calendario.gif" alt="" class="">
+                                <button class="btn py-3 dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#conteudo">
+                                    <span class="text-light"> CLIQUE PARA VISUALIZAR!</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="container collapse mb-5" id="conteudo" data-aos="fade-left">
+                    <h1 class="text-center mb-5">Próximos Eventos Reprograme-se!</h1>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Evento</th>
+                                <th>Local</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody-agenda">
+                            <!-- Linhas da tabela serão adicionadas usando JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 mb-3" data-aos="fade-up">
+                <h4 class="text-center titulo-azul p-1 mb-1">#DÚVIDAS</h4>
+                <div class="card bg-perguntas">
+                    <div class="card-body agenda">
+                        <h5 class="card-title text-center" id="duvidas">Dúvidas frequentes</h5>
+                        <p class="card-img card-perguntas text-center"><img src="img/Jovens.png" alt=""></p>
+                        <p class="">
+
+                        <p class="titulo-perguntas">Quais são os cursos de projeto reprograme-se?</p>
+                        <p class="text-dark">O reprograme-se é composto por dois cursos: o curso Programação básica de aplicativos
+                            Web - Front-end e o curso Programação com JavaScript e o Framework Node.js - Backend (confira o link da estrutura do curso).
+                        </p>
+
+                        <p class="titulo-perguntas">Quanto tempo eu tenho para finalizar os cursos do projeto reprograme-se?</p>
+                        <p class="text-dark">O reprograme-se terá a duração de 8 meses, sendo 4 meses para o curso Programação
+                            básica de aplicativos Web - Front-end e 4 meses para o curso Programação com
+                            JavaScript e o Framework Node.js - Back-end.
+                        </p>
+
+                        <p class="titulo-perguntas">Tenho que pagar inscrição?</p>
+                        <p class="text-dark">Não, o curso é totalmente gratuito.
+                        </p>
+
+                        <p class="titulo-perguntas">Terei atendimentos se tiver dúvidas?</p>
+                        <p class="text-dark">Sim. Você contará com o apoio de um professor mediador que possui formação na área
+                            do reprograme-se e um Monitor que é estudante de curso de informática.
+
+                        </p>
+
+                        <p class="titulo-perguntas">Tenho que ir ao Ifes fazer matrícula?</p>
+                        <p class="text-dark">Não! As matrículas serão realizadas de forma online a partir das informações
+                            disponibilizadas na inscrição.
+                        </p>
+
+                        <p class="titulo-perguntas">Quais são os cursos de projeto reprograme-se?</p>
+                        <p class="text-dark">O reprograme-se é composto por dois cursos: o curso Programação básica de aplicativos
+                            Web - Front-end e o curso Programação com JavaScript e o Framework Node.js - Backend (confira o link da estrutura do curso).
+                        </p>
+
+                        <p class="titulo-perguntas">Quais são os cursos de projeto reprograme-se?</p>
+                        <p class="text-dark">O reprograme-se é composto por dois cursos: o curso Programação básica de aplicativos
+                            Web - Front-end e o curso Programação com JavaScript e o Framework Node.js - Backend (confira o link da estrutura do curso).
+                        </p>
+
+                        <p class="text-primary h4">MAIS DÚVIDAS:</p>
+                        <a class="btn btn-lg" href="img/respostas.pdf" download="name"> <span class="bi bi-file-pdf text-bg-danger">BAIXAR PDF</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr class="container-fluid text-primary border-5">
+    <div class="container">
+        <h2 class="mb-15 titulo-azul text-center" data-aos="fade-up">Dúvidas, críticas ou sugestões?</h2>
+        <section class="sec-precos mb-30" id="preco">
+            <p class="mb-10 bg-duvidas p-3" data-aos="fade" data-aos-offset="0">
+                Agradecemos por utilizar a plataforma "Reprograme-se" e por compartilhar suas dúvidas e sugestões conosco. Estamos sempre trabalhando para melhorar a experiência dos usuários em nossa plataforma e sua opinião é extremamente valiosa para nós. <br> <br>
+
+                Se você tiver alguma dúvida sobre o funcionamento da plataforma, por favor, não hesite em entrar em contato com nossa equipe de suporte. Estamos aqui para ajudá-lo a aproveitar ao máximo a plataforma "Reprograme-se". <br> <br>
+
+                Além disso, se você tiver alguma sugestão para melhorar a plataforma, ficaremos felizes em ouvir suas ideias. Queremos fornecer a melhor experiência possível para nossos usuários, e estamos sempre abertos a novas sugestões que possam nos ajudar a alcançar esse objetivo. <br> <br>
+
+            </p>
+            <span data-aos="fade-right" class="h6 d-flex col-6 mx-auto text-primary">Preencha o formulário abaixo. Estamos ansiosos para te ouvir!</span>
+            <form class="mt-20" data-aos="fade-up">
+                <div class="row g-2">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <input class="border border-primary" type="text" placeholder="Digite seu nome..." id="nome_form">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <input class="border border-primary" type="text" placeholder="Digite sua cidade..." id="cidade_form">
+                    </div>
+                    <div class="col-12">
+                        <input class="border border-primary" type="text" placeholder="Digite um título..." id="titulo_form">
+                    </div>
+                    <div class="col">
+                        <textarea class="border border-primary" id="ideia_form" placeholder="Descreva sua ideia..."></textarea>
+                    </div>
+                </div>
+                <button id="botao_form" type="submit" class="btn-solido mt-2"><a href="#" id="envia_form" class="text-decoration-none text-light mt-0">ENVIAR</a></button>
+            </form>
+
+        </section>
+
+        <hr class="container text-primary border-5">
+        <section class="sec-assinar ta-center mb-30" data-aos="fade-up" id="newsletter">
+            <h2 class="mb-15 titulo-duvidas text-center gradient">Inscreva-se na nossa Newsletter e fique por dentro das novidades!</h2>
+            <p class="mb-15 text-start bg-duvidas p-3">
+                Ao assinar gratuitamente, você receberá em seu e-mail uma variedade de dicas e conteúdo relacionados a tecnologia e programação, tudo completamente grátis e acessível para todos. <br>
+
+                Queremos que você aproveite ao máximo a nossa plataforma e tenha acesso aos nossos conteúdos exclusivos. Para isso, estamos oferecendo a oportunidade de se inscrever em nossa newsletter e receber informações sobre novos cursos diretamente em sua caixa de entrada. <br>
+
+                Ao assinar nossa newsletter, você terá acesso a: <br>
+
+
+                - Informações sobre novos cursos lançados na plataforma <br>
+                - Dicas exclusivas sobre como aproveitar ao máximo nossos cursos <br>
+                - Conteúdo extra sobre os temas abordados nos cursos <br>
+                - E muito mais! <br>
+
+                Não perca mais tempo e inscreva-se agora mesmo. É rápido, fácil e totalmente gratuito. Basta preencher o formulário abaixo e começar a receber nossos cursos diretamente em sua caixa de entrada. Junte-se a nossa comunidade de estudantes e aproveite ao máximo nossos cursos gratuitos! <br>
+            </p>
+            <form class="mb-20">
+                <input type="email" placeholder="E-mail" class="border border-primary mb-2 col-6"><br>
+                <button class="btn-solido">Assinar</button>
+            </form>
+            <a href="#"><i class="bi-instagram mx-20 social"></i></a>
+            <a href="#"><i class="bi-facebook mx-20 social"></i></a>
+            <a href="#"><i class="bi-youtube mx-20 social"></i></a>
+        </section>
+
+    </div>
+
+    <section class="container-fluid bg-rodape" style="background-color: #8b4f7c;">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="/img/logo-ifes/ifes-vertical-branco.png" alt="" class="w-75">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="/img/logo-action/vertical-negativa.png" alt="" class="w-50 mt-4">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="/img/logo-reprogramese/preferencial-vertical-branca.png" alt="" class="w-50 mt-4">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <p class="text-light mt-4 fs-4">Acesso rápido</p>
+                <ul>
+                    <li><a href="#inscricao" class="text-decoration-none text-light">Inscrição</a></li>
+                    <li><a href="#noticias" class="text-decoration-none text-light">Notícias</a></li>
+                    <li><a href="#eventos" class="text-decoration-none text-light">Eventos</a></li>
+                    <li><a href="#depoimentos" class="text-decoration-none text-light">Depoimentos</a></li>
+                    <li><a href="#duvidas" class="text-decoration-none text-light">Dúvidas</a></li>
+                    <li><a href="#newsletter" class="text-decoration-none text-light">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center" data-aos="fade" data-aos-offset="0">
+        <p class="text-light">&copy; Matheus Vasconcelos / Edigar Marinato</p>
+    </footer>
+</body>
+
+</html>
+
+
+<script src="/node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="/node_modules/aos/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 200,
+        duration: 1200,
+        easing: 'ease-in',
+        delay: 500,
+    });
+    var scroll =
+        new SmoothScroll('a[href*="#"]', {
+            speed: 500
+        });
+
+</script>

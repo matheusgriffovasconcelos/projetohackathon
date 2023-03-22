@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bg-reprogramese {
+    background: url("/img/bg-foguete.jpg");
+    background-size: cover;
+}
+
+.bg-rodape {
+    background: url("/img/bg-rodape2.jpg");
+    background-size: cover; 
+}
+
+.relogio {
+    height: 100%;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+.relogio div {
+    height: 50%;
+    color: #fff;
+    width: 25%;
+    margin: 5px;
+    background: rgba(73, 0, 73, 0.9);
+
+    /* background: linear-gradient(200deg, #454747, #2e6ed6, #38022b); */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+
+.relogio span {
+    font-weight: bolder;
+    font-size: 100%;
+
+}
+
+.relogio span.tempo {
+    font-size: 70%;
+}
+
+.titulo-relogio {
+    font-weight: bold;
+    color: rgb(236, 236, 236);
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+
+.gradient {
+    background-image: linear-gradient(to bottom, #1A7FBE, #5B7FB9, #C27FB1);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    color: black;
+
+}
+
+
+.card-depoimentos {
+    height: 400px;
+    overflow: auto;
+}
+
+.card img {
+    width: 100px;
+    border-radius: 100px;
+}
+
+
+/* CALENDÁRIO E PERGUNTAS FREQUENTES */
+
+.card-perguntas img {
+    width: 200px;
+    
+}
+/* Estilos para dispositivos pequenos */
+@media (max-width: 767px) {
+
+    /* Reduz a fonte do cabeçalho */
+    h1 {
+        font-size: 24px;
+    }
+
+    /* Ajusta o tamanho da tabela */
+    table {
+        font-size: 14px;
+    }
+
+    /* Esconde a coluna de datas */
+    table td:nth-child(1),
+    table th:nth-child(1) {
+        display: none;
+    }
+
+    /* Ajusta a largura das células de evento e local */
+    table td:nth-child(2),
+    table td:nth-child(3),
+    table th:nth-child(2),
+    table th:nth-child(3) {
+        width: 50%;
+    }
+}
+
+
+
+.agenda {
+    position: relative;
+    height: 300px;
+    overflow: auto;
+}
+
+
+
+.agenda .teste {
+    position: absolute;
+    bottom: 0; /* define que o conteúdo está no final da div */
+    text-align: center;
+}
+
+.agenda button {
+    background-image: linear-gradient(to bottom, #1A7FBE, #5B7FB9, #C27FB1);
+}
+
+.bg-agenda {
+    background: url('/img/calendario.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.bg-perguntas {
+    background: url('/img/bg-1.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+
+footer {
+    background-color: #20345362;
+
+}
+
+.titulo-duvidas {
+
+    font-family: 'Montserrat';
+    font-weight: 900;
+}
+
+.titulo-perguntas {
+
+    font-family: 'Montserrat';
+    font-weight: 900;
+    color: black;
+    size: .8rem;
+}
+
+
+
+.bg-duvidas {
+    background-color: rgb(235,231,231,0.4);
+    color: rgb(53, 53, 53);
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+.titulo-azul {
+    color: #051853;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: url("/img/bg-rodape.jpg") no-repeat;
+    opacity: 90%;
+    padding: 0 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+
+
+
